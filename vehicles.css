@@ -1,0 +1,560 @@
+#headbackground{
+    position: relative;
+    background: url(images/logobackground.jpg), rgb(243, 245, 240);
+    opacity: 30%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8vh;
+}
+.icon{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 7fr .1fr;
+    grid-template-rows: .3fr;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+.name{
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+}
+.logo1{
+    mix-blend-mode: multiply;
+    width: 8vw;
+    height: 8vh;
+}
+.logo2{
+    mix-blend-mode: multiply;
+    width: 15vw;
+    height: 8vh;
+}
+#bod{
+    position: relative;
+}
+#name{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    position: absolute;
+    top: vh;
+    left: 75%;
+    font-weight:bolder ;
+    display: flex;
+    font-size: 1.5em;
+}
+p{
+    padding: 0;
+    margin-top: -2vh;
+    margin-left: 8vh;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: relative;
+    height: 10vh;
+}
+.icon1{
+    padding:1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    height: 5vh;
+}
+.icon1a{
+    display: flex;
+    align-items: center;
+}
+.icon1a img{
+    margin: 1em;
+    width:2.5em ;
+}
+
+.home{
+    width: 10px;
+    padding:1em;
+    margin: 1em;
+}
+#icon2{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2em;
+    height: 5vh;
+}
+.search{
+    margin-left: 30vw;
+    display: flex;
+    align-items: center;
+}
+.search h4{
+    margin-right: .5em;
+    font-size: 1.3em;
+}
+.search input{
+    margin-right: 3em;
+    border-top: 0;
+    border-left: 0;
+}
+#dropdown{
+    position: relative;
+    display: flex;
+}
+#dropdown div{
+    display: flex;
+    justify-content: space-around;
+}
+#dropdown img{
+    padding-right: .5em;
+    width: 1em;
+}
+#engine:checked .engines{
+    left: 59vw;
+    transition:ease-in-out .5s;
+}
+#tyre:checked ~ .tyres{
+    left: 80vw;
+    transition:ease-in-out .5s;
+}
+#car:checked ~ .cars{
+    left: 88vw;
+    transition:ease-in-out .5s;
+}
+#engine{
+    display: none;
+}
+#tyre{
+    display: none;
+}
+#car{
+    display: none;
+}
+label #enginebtn, label #tyrebtn, label #carbtn{
+    position: relative;
+    cursor: pointer;
+}
+.engines{
+    padding: 1em 0 0 1em;
+    position: absolute;
+    left: 50vw;
+    top: 0vh;
+    height: 10vh;
+    width: 10vw;
+    background: rgba(220, 220, 233, 0.836);
+    box-shadow: 2px 5px 10px rgba(116, 112, 102, 0.295); 
+    border-radius: .5em;  
+}
+.tyres{
+    padding: 1em 0 0 1em;
+    text-transform: capitalize;
+    position: relative;
+    left:60vw;
+    top: 0vh;
+    height: 10vh;
+    width: 10vw;
+    background: rgba(220, 220, 233, 0.836);
+    box-shadow: 2px 5px 10px rgba(116, 112, 102, 0.295); 
+    border-radius: .5em;  
+}
+.cars{
+    padding: 1em 0 0 1em;
+    text-transform: capitalize;
+    position: relative;
+    left: 70vw;
+    top: 0vh;
+    height: 10vh;
+    width: 10vw;
+    background: rgba(220, 220, 233, 0.836);
+    box-shadow: 2px 5px 10px rgba(116, 112, 102, 0.295); 
+    border-radius: .5em;    
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pbackground{
+    top: 10vh;
+    padding: 3vw;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    background: url(images/callmech.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    z-index: -1;
+}
+#playout{
+    position: absolute;
+    top: 10vh;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    z-index: 50;
+}
+
+.product1{
+    position:absolute;
+    top: 30vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product2{
+    position:absolute;
+    top: 30vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product3{
+    position:absolute;
+    top: 30vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product4{
+    position:absolute;
+    top: 30vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+
+.product5{
+    position:absolute;
+    top: 55vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product6{
+    position:absolute;
+    top: 55vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product7{
+    position:absolute;
+    top: 55vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product8{
+    position:absolute;
+    top: 55vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product9{
+    position:absolute;
+    top: 80vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product10{
+    position:absolute;
+    top: 80vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product11{
+    position:absolute;
+    top: 80vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product12{
+    position:absolute;
+    top: 80vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+
+.product13{
+    position:absolute;
+    top: 105vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product14{
+    position:absolute;
+    top: 105vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product15{
+    position:absolute;
+    top: 105vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product16{
+    position:absolute;
+    top: 105vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+#pbackground2{
+    padding: 3vw;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    top: 15vh;
+    background: url(images/callmech.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    z-index: -1;
+    margin-top: 80vh;
+}
+#playout2{
+    position: absolute;
+    top: 10vh;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    z-index: 50;
+}
+.product17{
+    position:absolute;
+    top: 140vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product18{
+    position:absolute;
+    top: 140vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product19{
+    position:absolute;
+    top: 140vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product20{
+    position:absolute;
+    top: 140vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+
+.product21{
+    position:absolute;
+    top: 165vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product22{
+    position:absolute;
+    top: 165vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product23{
+    position:absolute;
+    top: 165vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product24{
+    position:absolute;
+    top: 165vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product25{
+    position:absolute;
+    top: 190vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product26{
+    position:absolute;
+    top: 190vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product27{
+    position:absolute;
+    top: 190vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product28{
+    position:absolute;
+    top: 190vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+
+.product29{
+    position:absolute;
+    top: 215vh;
+    left: 3vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product30{
+    position:absolute;
+    top: 215vh;
+    left: 26vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product31{
+    position:absolute;
+    top: 215vh;
+    left: 49vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+.product32{
+    position:absolute;
+    top: 215vh;
+    left: 73vw;
+    background: rgb(16, 35, 61);
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(124, 123, 119, 0.877);
+}
+footer{
+    position: relative;
+    top: 100vh;
+    height: 25vh;
+    background: rgba(3, 3, 20, 0.952);
+}
+.enter{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    font-size: 1.2em;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50vw;
+    top: 4vh;
+    width: 40vw;
+}
+input{
+    border-radius: 1vw;
+    height: 2vh;
+    width: 25vw;
+}
+button{
+    position: relative;
+    left: 75vw;
+    top: 16vh;
+    font-size: 1em;
+    margin-top: .4vw;
+    color: whitesmoke;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 1vw;
+    background: rgb(23, 77, 228);
+    border: none;
+    box-shadow: 2px 5px 2px rgba(116, 112, 102, 0.295);
+    
+}

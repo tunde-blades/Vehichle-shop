@@ -1,0 +1,274 @@
+font-family: 'Advent Pro', sans-serif;
+font-family: 'BenchNine', sans-serif;
+font-family: 'Cabin Condensed', sans-serif;
+font-family: 'Concert One', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Economica', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Suranna', serif;
+font-family: 'Xanh Mono', monospace;
+font-family: 'Yeseva One', cursive;
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-bottom: 1vh;
+    position: fixed;
+    height: 5vh;
+    width: 100vw;
+    z-index: 1000;
+}
+.logo{
+    color: blanchedalmond;
+    background: url(images/back5.jpg);
+    background-repeat: no-repeat;
+    background-position:left center;
+    background-size: cover;
+    padding: 0 5vh;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.mainnav{
+    margin: 0vh 1vh;
+    position: relative;
+    height: 5vh;
+    top: 3vw;
+    display: flex;
+    align-content: center;
+    justify-content:space-between;
+}
+.icon1{
+    display: flex;
+}
+.icon1 p{
+   visibility: hidden;
+   position: absolute;
+   top: -1vw;
+}
+.icon1 i{
+    margin: 2vw;
+    position: relative;
+}
+.icon1 i:hover ~ p{
+    cursor: pointer;
+    visibility: visible;
+    text-transform:capitalize;
+}
+.icon2{
+    display: flex;
+    visibility: hidden;
+}
+.bar:hover ~ .icon2{
+    cursor: pointer;
+    visibility: visible;
+    transition:  ease-in-out 1s;
+}
+.icon2 p{
+   visibility: hidden;
+   position: absolute;
+   top: -3vw;
+}
+.icon2 i{
+    margin: 2vw;
+    position: relative;
+}
+.icon2 i:hover ~ p{
+    cursor: pointer;
+    visibility: visible;
+    text-transform:capitalize;
+}
+#container1{
+    position: relative;
+    top: 15vh;
+    background: url(images/back8.jpeg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+.welcomenote{
+    position: relative;
+    left: 3vw;
+    margin: 5vw;
+    padding: 2vw;
+    width: 40vw;
+    height: 25vh;
+    background: rgba(255, 255, 255, 0.336);
+    box-shadow:.5em .5em .8em rgba(3, 4, 43, 0.452);
+    border: solid rgba(3, 4, 43, 0.452);
+}
+.welcomenote h2{
+    text-transform: capitalize;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 2em;
+}
+.welcomenote p{
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'BenchNine', sans-serif;
+}
+.welcomenote p span{
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: 'Concert One', cursive;
+
+}
+.secndcontainer{
+    position: relative;
+    top: 20vh;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    height: 60%;
+    width: 40vw;
+}
+.secndcontainer img{
+    width: 100%;
+    height: 13vh;
+    border-radius: 10%;
+
+}
+.offer{
+    color: white;
+    font-family: 'Yeseva One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vh;
+    background:url(images/back5.jpg);
+    background-position: top center;
+    width: 20vw;
+    box-shadow: 5px 5px 5px rgba(47, 47, 48, 0.644);
+    border-radius:20% 20% 0 0;
+}
+.offer p{
+    padding: 1vw
+}
+.offer button{
+    background: rgb(8, 8, 95);
+    color: cornsilk;
+    padding:.2vw 1vh;
+}
+.offer button:hover{
+    cursor: pointer;
+    border-radius: 1em;
+    width: 15vh;
+    background: rgb(20, 70, 161);
+    transition: ease-in-out .3s;
+}
+#midcontainer{
+    height: 50vh;
+}
+#slider{ 
+    position: relative;
+    top: -20vh;
+    padding: 0px;
+    margin: 0px 5px;  
+    overflow: hidden;
+}
+#slider figure{
+    display:flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 480vw;
+    margin:0;
+    left: 0;
+    animation: 50s slider infinite;
+}
+#slider .engineer, .engineer1, .engineer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+	float: right;
+	width: 100vw;
+    margin: 0 30vh;
+}
+#slider img{
+    margin: 10%;
+    width: 30vw;
+    height: 45vh;
+    border-radius: 50%;
+}
+/* .engineer{
+    height: 10vh;
+    width: 20vw;
+    background: rgba(255, 255, 255, 0.651);
+} */
+@keyframes slider {
+    0%{
+        left: -30%;
+    }
+    20%{
+        left: -30%;
+    }
+    25%{
+        left: -145vw;
+    }
+    45%{
+        left: -150vw;
+    }
+    50%{
+        left: -265vw;
+    }
+    65%{
+        left: -270vw;
+    }
+    70%{
+        left: -385vw;
+    }
+    90%{
+        left: -390vw;
+    }
+    99%{
+        left: -510vw;
+    }
+    100%{
+        left: -1000vw;
+    }
+}
+#service img{
+    border: rgb(6, 8, 94) solid .3em;
+    margin-bottom: 10vh;
+    width: 40vw;
+    height: 35vh;
+}
+#service{
+    position: relative;
+    top: -20vh;
+    background: rgba(9, 44, 97, 0.349);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.serv .note{
+    visibility: hidden;
+    text-align: center;
+    padding: 2vw;
+    background: rgba(76, 95, 102, 0.445);
+    height: 27vh;
+    width: 37vw;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    color: white;
+    transition:ease-in-out 1s;
+    
+}
+.serv img:hover ~ .note{
+    visibility: visible;
+}
+.serv{
+    position: relative;
+}
